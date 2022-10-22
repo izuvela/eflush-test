@@ -11,7 +11,7 @@ This will also create an eflush_app schema and a system user - the application c
 
 Database port, root user and root password are defined in the docker-compose.yml file. Those are used to manually connect to the database (e.g. DataGrip).
 
-  
+NOTE: folders must not have `/` in their name otherwise it will cause an error
 
 ## Project scripts
 
@@ -75,5 +75,6 @@ Note: Each layer can ONLY communicate with layers below it. For example, service
 
 1. Compose and start a database as described above
 2. Run `yarn install` to install all of the projects dependencies
+	* before running `yarn install` run this command: `npm i -g node-pre-gyp tsc nodemon`
 3. Start the TypeScript compiler in a terminal using the `yarn watch` script
 4. Start the application in another terminal window using the `yarn start-dev` script
