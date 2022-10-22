@@ -3,7 +3,7 @@
 
 ## Database
 
-Docker is used to run a PostgreSQL:v14.5 database.
+Docker is used to run a PostgreSQL:v15 database.
 
 To compose and start a database, navigate to the src/db/entrypoint folder and run ` docker-compose up -d `.
 
