@@ -52,7 +52,7 @@ For example, if we have an issue on GitHub named "Implement login form" and it's
 1. `git stash`
 	* saves all the changes in the "clipboard"
 2. `git checkout [branch-we-should-be-on]` 
-	* if we didin't create the branch, we add `-b` to the command 
+	* if we didn't create the branch, we add `-b` to the command 
 3. `git stash pop`
 	* pasting all the changes on the new branch
 
