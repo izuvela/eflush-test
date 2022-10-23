@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Button, { ButtonType } from '../components/Button';
+import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Link to={"/button"}>
+        <Button text="Go to buttons" type={ButtonType.PRIMARY} />
+      </Link>
+    </>
+  );
+};
 
-export default Home
+export default Home;

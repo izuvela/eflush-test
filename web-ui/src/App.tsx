@@ -1,24 +1,17 @@
-import Button, { ButtonType } from './components/Button';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import ButtonTest from './pages/ButtonTest';
 
 const App: React.FC = () => {
   return (
     <>
-      <div className='text-center my-5 text-3xl'>React/Tailwind proof of concept</div>
-      <div className='flex justify-center gap-5'>
-        <Button text='Fuck off' type={ButtonType.DANGER} />
-        <Button text='Not cool' type={ButtonType.SECONDARY} />
-        <Button text='Cool' type={ButtonType.PRIMARY} />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/button" element={<ButtonTest />}/>
+      </Routes>
     </>
   );
-}
+};
 
 export default App;
-
-/**
- * yarn create react-app eflush-webui --template typescript
-
-   yarn add -D tailwindcss postcss autoprefixer
-
-   yarn tailwindcss init -p
- */
