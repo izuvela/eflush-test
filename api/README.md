@@ -19,7 +19,7 @@ NOTE: folders must not have `/` in their name otherwise it will cause an error
 
 2.  `yarn watch` - to start typescript compiler. Transpiled javascript code gets stored in the /dist folder which is automatically created.
 
-3.  `yarn start-dev` - to start the project in the development mode. This mode uses nodemon to watch for changes and restart the server.
+3.  `yarn start` - to start the project in the development mode. This mode uses nodemon to watch for changes and restart the server.
 
 4.  `yarn start-prod` - to start the project in the production mode. This mode starts the project using node.
 
@@ -77,4 +77,4 @@ Note: Each layer can ONLY communicate with layers below it. For example, service
 2. Run `yarn install` to install all of the projects dependencies
 	* before running `yarn install` run this command: `npm i -g node-pre-gyp tsc nodemon`
 3. Start the TypeScript compiler in a terminal using the `yarn watch` script
-4. Start the application in another terminal window using the `yarn start-dev` script
+4. Start the application in another terminal window using the `yarn start` script
