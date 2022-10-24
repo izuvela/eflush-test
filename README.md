@@ -18,6 +18,8 @@ These branches adhere to the same rules and principles as feature branches but a
 ---
 
 ### Naming conventions
+**Important note: Temporary branches must not be deleted (Project specific behavior)**
+
 Collectively, feature and bugfix branches are known as temporary branches. As the name implies, these are disposable branches that can be created and deleted by need of the developer or deployer. Most conventions recommend leading the branch name with prefixes like `hotfix`, `feature`, or some other variant of the categorization of tasks.
 
 1. Branch name start with a type keyword (`feature` or `bugfix`)
